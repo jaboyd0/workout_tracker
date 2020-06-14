@@ -4,7 +4,6 @@ require('dotenv/config');
 
 const dbConfig = process.env.MONGODB_URI || "mongodb://localhost/workout";
 
-
 mongoose.connect(dbConfig, {
   useNewUrlParser: true,
   useFindAndModify: false,
